@@ -22,3 +22,5 @@ __3. Creating and activating the venv:__
 - Create: `virtualenv --python=/opt/python-3.6/bin/python3.6 ~/venvpy/tf-1`     
     - `--python` specifing the directory for the python version `~/venvpy/tf-1` the full path for the venv including the name
 - Activate (fish shell): `. ~/venvpy/tf-1/bin/activate.fish` __OR__ (Bash shell) `source ~/venvpy/tf-1/bin/activate`       
+
+__4. Upgrade pip:__ `~/venvpy/tf-1/bin/python -m pip install --upgrade pip`
