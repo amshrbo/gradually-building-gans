@@ -29,5 +29,5 @@ __4. Upgrade pip:__ `$ python -m pip install --upgrade pip` make sure that your 
 
 __5. Installing packages:__
 1. pytorch: `pip3 install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html`
-2. other packages: `pip install ipython matplotlib jupyter`
+2. other packages: `pip install ipython matplotlib jupyter tqdm`
 3. downgrading jedi for autocomplete to work in jupyter: `pip install jedi==0.17.2`
