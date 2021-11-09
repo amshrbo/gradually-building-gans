@@ -43,7 +43,8 @@ def compute_sn(weights):
 
 
     # spectral normalizing weights
-    w_spec_norm = np.multiply(np.transpose(u_updated), np.multiply(weights, v))
+    sigma = np.multiply(np.transpose(u_updated), np.multiply(weights, v))
+    w_spec_norm = np.divide(weights, sigma)
 
     return w_spec_norm
 
