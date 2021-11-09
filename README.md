@@ -1,9 +1,15 @@
-# dl-challenge-prot
-Gradually building GANs going from linear gan to DCGANs with spectral normalization
+# Gradually Building GANs
+Gradually building GANs Covering: 
+- [_linear-gans_ without BatchNorm](./gans/01_linear_GAN.ipynb)
+- [_linear-gans with batchNorm_](./gans/02_linear_GAN_Batchnorm.ipynb)
+- [_DCGANs with batchNorm_](./gans/03_conv_GAN_batchnorm.ipynb)
+- [_DCGANs with spectral normalization_](./gans/)
 
 ### Installation (Debian)
+> - Avoid installing python 3.6.0 It's too old and have lots of error with the new packages.
+> - If you have py=3.6.15 and a tool for managing virtual environments installed you can skip to __step 5__ in the installation process.
+
 __1. Installing the required python version (python 3.6.15)__     
-> Avoid installing the 3.6.0 It's too old and have lots of error with the new packages
 
 - Install dependencies:     
     - `$ sudo apt update && sudo apt install libssl-dev openssl libbz2-dev liblzma-dev`      
