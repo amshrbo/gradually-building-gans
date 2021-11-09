@@ -25,21 +25,24 @@ def init_u(weights_shape):
 
 
 
-def compute_sn(weights):
+def compute_sn(weights, pow_itr):
     '''
-        Input: a matrix of weights
+        Input: 
+            weights: a matrix of weights
+            pow_itr: the number of times (u and v) gets updated 
         Outputs: a matrix of spectraly normalized weights
     '''
     # Initializing u
     u = init_u(weights.shape)
+    u_updated = u
 
-
-    # calculating U and V
-    u_norm = l2_norm(u, weights)
-    v = np.multiply(np.transpose(weights), u) / u_norm
-    
-    v_norm = l2_norm(v, weights)
-    u_updated = np.multiply(weights, v) / v_norm
+    for _ in range(pow_itr):
+        # calculating U and V
+        u_norm = l2_norm(u_updated, weights)
+        v = np.multiply(np.transpose(weights), u_updated) / u_norm
+        
+        v_norm = l2_norm(v, weights)
+        u_updated = np.multiply(weights, v) / v_norm
 
 
     # spectral normalizing weights
@@ -56,7 +59,7 @@ def main():
     print(weights)
     print()
 
-    sn_weights = compute_sn(weights)
+    sn_weights = compute_sn(weights, 1)
 
     print(f"\nThe values of the spectral normal weights are : ")
     print(sn_weights)
