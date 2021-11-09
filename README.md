@@ -3,7 +3,7 @@ Gradually building GANs Covering:
 - [_linear-gans_ without BatchNorm](./gans/01_linear_GAN.ipynb)
 - [_linear-gans with batchNorm_](./gans/02_linear_GAN_Batchnorm.ipynb)
 - [_DCGANs with batchNorm_](./gans/03_conv_GAN_batchnorm.ipynb)
-- [_DCGANs with spectral normalization_](./gans/)
+- [_DCGANs with spectral normalization_](./gans/04_conv_GAN_SN.ipynb)
 
 ### Installation (Debian)
 > - Avoid installing python 3.6.0 It's too old and have lots of error with the new packages.

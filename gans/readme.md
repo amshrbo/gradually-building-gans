@@ -1,4 +1,5 @@
 ## Notes on the different implemenation of GAN
+> Note That I've used the mentioned pytorch example, and built the models gradually over it
 
 ### Linear GAN
 > Building a simple linear gan using only fully connected layers we get 
@@ -7,7 +8,7 @@
 > - Getting better result using BatchNorm weight normalization technique as the Gen loss dropped from `4.9 to 3.9` after only 20 epochs of training without doing hyperparam tunning 
 > - Comparing this to the previous model (Linear GAN) we get a better result after all.
 
-### DCGAN BatchNorm
+### DCGAN with BatchNorm
 > - Building a Convolutional GAN the loss dropped dastically from 3+ to 1+ and getting much better result.
 > - _The discriminator_: here is less dominanet compared to the previous two models which gives the generator more room to learn and improve.
 
